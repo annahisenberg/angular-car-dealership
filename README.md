@@ -12,7 +12,7 @@ Use these stories to guide your development process:
 
 - As a Frontend Engineer, I need to leverage Angular to build a single page application.
 
-- As a Frontend Engineer, I need to organize the project that emphasizes separation of concerns.
+- As a Frontend Engineer, I need to organize the project in a manner that emphasizes separation of concerns.
 
 - ... Feel free to add user stories as you see fit!
 
@@ -22,7 +22,7 @@ Create a tool with filtering options that returns a list of automobiles fulfilli
 
 It is acceptable to use the Angular CLI tool to set this project up. We also recommend using UI components libraries such as [Angular Material](https://material.angular.io/guide/getting-started). We are looking for a frontend solution that consumes your API service and displays the information in a friendly manner.
 
-It will be safe to assume that any "storage" required by the application can/should/will be done using Web APIs; you may mock the storage for those as you need, but the application must behave exactly the same if/when a back end is wired up to it. If you prefer to use a real back-end, you may, but we urge you not to spend a great deal of time on that--we are interested (and will be evaluating you) solely on your front-end skills.
+It will be safe to assume that any "storage" required by the application can/should/will be done using Web APIs; you may mock the storage for those as you need, but the application must behave exactly the same if/when a backend is wired up to it. If you prefer to use a real backend, you may, but we urge you not to spend a great deal of time on that -- we are interested (and will be evaluating you) solely on your frontend skills.
 
 ---
 
