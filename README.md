@@ -45,6 +45,8 @@ It is acceptable to use the Angular CLI tool to set this project up. We also rec
 
 It will be safe to assume that any "storage" required by the application can/should/will be done using Web APIs; you may mock the storage for those as you need, but the application must behave exactly the same if/when a backend is wired up to it. If you prefer to use a real backend, you may, but we urge you not to spend a great deal of time on that -- we are interested (and will be evaluating you) solely on your frontend skills.
 
+**Writing unit tests is highly encouraged.**
+
 ---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
