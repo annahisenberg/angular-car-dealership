@@ -12,6 +12,6 @@ export class CarsService {
   // TODO: methods to return data from json file or create an in memory web api
 
   getAllCars() {
-
+    return Cars;
   }
 }
