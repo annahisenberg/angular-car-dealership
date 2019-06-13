@@ -12,4 +12,7 @@ export class InputFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log('form submitted')
+  } 
 }
