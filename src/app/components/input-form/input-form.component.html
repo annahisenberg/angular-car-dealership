@@ -1,57 +1,54 @@
 <form (ngSubmit)="onSubmit">
+  <h1>Search for a car</h1>
+  <mat-form-field>
+    <mat-label>Make:</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="chevy">Chevy</mat-option>
+      <mat-option value="toyota">Toyota</mat-option>
+      <mat-option value="mercedes">Mercedes</mat-option>
+      <mat-option value="ford">Ford</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Year:</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="2012">2012</mat-option>
+      <mat-option value="2013">2013</mat-option>
+      <mat-option value="2014">2014</mat-option>
+      <mat-option value="2015">2015</mat-option>
+      <mat-option value="2016">2016</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Color:</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="blue">Blue</mat-option>
+      <mat-option value="red">Red</mat-option>
+      <mat-option value="white">White</mat-option>
+    </mat-select>
+  </mat-form-field>
   <div>
-    <label for="make">Make:</label>
-    <select id="make">
-      <option value="chevy">Chevy</option>
-      <option value="toyota">Toyota</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="ford">Ford</option>
-    </select>
+    <mat-checkbox id="trans" labelPosition="before">Automatic Transmission:</mat-checkbox>
   </div>
   <div>
-    <label for="year">Year:</label>
-    <select id="year">
-      <option value="2012">2012</option>
-      <option value="2013">2013</option>
-      <option value="2014">2014</option>
-      <option value="2015">2015</option>
-      <option value="2016">2016</option>
-    </select>
+    <mat-checkbox id="sunroof" labelPosition="before">Sun roof:</mat-checkbox>
   </div>
   <div>
-    <label for="color">Color:</label>
-    <select id="color">
-      <option value="blue">Blue</option>
-      <option value="red">Red</option>
-      <option value="white">White</option>
-    </select>
+    <mat-checkbox id="4wheel" labelPosition="before">Four wheel drive:</mat-checkbox>
   </div>
   <div>
-    <label for="trans">Automatic Transmission:</label>
-    <input id="trans" type="checkbox">
+    <mat-checkbox id="miles" labelPosition="before">Low miles:</mat-checkbox>
   </div>
   <div>
-    <label for="sunroof">Sun Roof:</label>
-    <input id="sunroof" type="checkbox">
+    <mat-checkbox id="windows" labelPosition="before">Power windows:</mat-checkbox>
   </div>
   <div>
-    <label for="4wheel">4 Wheel Drive:</label>
-    <input id="4wheel" type="checkbox">
+    <mat-checkbox id="nav" labelPosition="before">Navigation:</mat-checkbox>
   </div>
   <div>
-    <label for="miles">Low Miles:</label>
-    <input id="miles" type="checkbox">
+    <mat-checkbox id="seats" labelPosition="before">Heated seats:</mat-checkbox>
   </div>
   <div>
-    <label for="windows">Power Windows:</label>
-    <input id="windows" type="checkbox">
-  </div>
-  <div>
-    <label for="nav">Navigation:</label>
-    <input id="nav" type="checkbox">
-  </div>
-  <div>
-    <label for="seats">Heated Seats:</label>
-    <input id="seats" type="checkbox">
+    <button mat-raised-button>Submit</button>
   </div>
 </form>
