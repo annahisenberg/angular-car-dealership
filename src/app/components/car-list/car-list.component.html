@@ -1,1 +1,6 @@
-<app-car *ngFor="let car of cars" [car]="car"></app-car>
+<ng-container *ngIf="!oneCar">
+  <app-car *ngFor="let car of cars" [car]="car"></app-car>
+</ng-container>
+<ng-container *ngIf="oneCar">
+  <app-car [car]="oneCar"></app-car>
+</ng-container>

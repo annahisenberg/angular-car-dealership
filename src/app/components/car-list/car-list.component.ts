@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CarsService } from '../../shared/services/cars.service';
 import { Car } from '../../shared/models/Car'
 
@@ -8,6 +8,8 @@ import { Car } from '../../shared/models/Car'
   styleUrls: ['./car-list.component.css']
 })
 export class CarListComponent implements OnInit {
+  @Input() oneCar: Car;
+  
   cars:Car[];
 
   constructor(private carsService:CarsService) { }

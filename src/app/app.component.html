@@ -1,4 +1,4 @@
 <div>
-  <app-input-form></app-input-form>
-  <app-car-list></app-car-list>
+  <app-input-form (searchCars)="searchCars($event)"></app-input-form>
+  <app-car-list [oneCar]="oneCar"></app-car-list>
 </div>

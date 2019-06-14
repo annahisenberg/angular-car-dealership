@@ -8,12 +8,13 @@ import { CarComponent } from './components/car/car.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
 
 // TODO: import any modules that will be used in the app
 
 @NgModule({
   declarations: [AppComponent, InputFormComponent, CarListComponent, CarComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatButtonModule, MatCheckboxModule, MatSelectModule],
+  imports: [BrowserModule, BrowserAnimationsModule, FormsModule, MatButtonModule, MatCheckboxModule, MatSelectModule],
   providers: [],
   bootstrap: [AppComponent]
 })

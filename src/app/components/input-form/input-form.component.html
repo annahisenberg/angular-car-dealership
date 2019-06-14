@@ -1,9 +1,9 @@
-<form (ngSubmit)="onSubmit">
+<form (ngSubmit)="onSubmit()">
   <h1>Search for a car</h1>
   <mat-form-field>
     <mat-label>Make:</mat-label>
-    <mat-select [(value)]="selected">
-      <mat-option value="chevy">Chevy</mat-option>
+    <mat-select [(value)]="make">
+      <mat-option value="Chevy">Chevy</mat-option>
       <mat-option value="toyota">Toyota</mat-option>
       <mat-option value="mercedes">Mercedes</mat-option>
       <mat-option value="ford">Ford</mat-option>
@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Year:</mat-label>
-    <mat-select [(value)]="selected">
+    <mat-select [(value)]="year">
       <mat-option value="2012">2012</mat-option>
       <mat-option value="2013">2013</mat-option>
       <mat-option value="2014">2014</mat-option>
@@ -20,35 +20,38 @@
     </mat-select>
   </mat-form-field>
   <mat-form-field>
+    <mat-label>Price:</mat-label>
+    <mat-select [(value)]="price">
+      <mat-option value="16106">16106</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
     <mat-label>Color:</mat-label>
-    <mat-select [(value)]="selected">
-      <mat-option value="blue">Blue</mat-option>
+    <mat-select [(value)]="color">
+      <mat-option value="Gray">Gray</mat-option>
       <mat-option value="red">Red</mat-option>
       <mat-option value="white">White</mat-option>
     </mat-select>
   </mat-form-field>
   <div>
-    <mat-checkbox id="trans" labelPosition="before">Automatic Transmission:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="sunRoof" [(ngModel)]="sunRoof">Sun roof:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="sunroof" labelPosition="before">Sun roof:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="fourWheel" [(ngModel)]="fourWheel">Four wheel drive:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="4wheel" labelPosition="before">Four wheel drive:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="lowMiles" [(ngModel)]="lowMiles">Low miles:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="miles" labelPosition="before">Low miles:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="powerWindows" [(ngModel)]="powerWindows">Power windows:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="windows" labelPosition="before">Power windows:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="navigation" [(ngModel)]="navigation">Navigation:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="nav" labelPosition="before">Navigation:</mat-checkbox>
+    <mat-checkbox labelPosition="before" name="heatedSeats" [(ngModel)]="heatedSeats">Heated seats:</mat-checkbox>
   </div>
   <div>
-    <mat-checkbox id="seats" labelPosition="before">Heated seats:</mat-checkbox>
-  </div>
-  <div>
-    <button mat-raised-button>Submit</button>
+    <button mat-raised-button type="submit">Submit</button>
   </div>
 </form>
