@@ -16,16 +16,25 @@ export class AppComponent {
   constructor(private carsService:CarsService) {}
 
   searchCars(car:Car) {
-    this.carsService.getAllCars().subscribe(resp => {
-      this.cars = resp;
-      this.cars.forEach(c => {
-        delete c._id;
-        if (_.isEqual(c, car)) {
-          this.oneCar = c;
-        } else {
-          console.log('not equal');
-        }
-      })
-    })
+    let make = document.getElementById('make').innerText.trim();
+    let year = document.getElementById('year').innerText.trim();
+    let price = document.getElementById('price').innerText.trim();
+    let color = document.getElementById('color').innerText.trim();
+    let sunRoof = document.getElementById('sunRoof').checked;
+
+    console.log(make, year, price, color, sunRoof);
+
+    // this.carsService.getAllCars().subscribe(resp => {
+    //   this.cars = resp;
+    //   this.cars.forEach(c => {
+    //     // delete c._id;
+    //     // if (_.isEqual(c, car)) {
+    //     //   this.oneCar = c;
+    //     // } else {
+    //     //   console.log('not equal');
+    //     // }
+    //     console.log(c);
+    //   })
+    // })
   }
 }

@@ -2,7 +2,7 @@
   <h1>Search for a car</h1>
   <mat-form-field>
     <mat-label>Make:</mat-label>
-    <mat-select [(value)]="make">
+    <mat-select id="make" [(value)]="make">
       <mat-option value="Chevy">Chevy</mat-option>
       <mat-option value="toyota">Toyota</mat-option>
       <mat-option value="mercedes">Mercedes</mat-option>
@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Year:</mat-label>
-    <mat-select [(value)]="year">
+    <mat-select id="year" [(value)]="year">
       <mat-option value="2012">2012</mat-option>
       <mat-option value="2013">2013</mat-option>
       <mat-option value="2014">2014</mat-option>
@@ -21,20 +21,20 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>Price:</mat-label>
-    <mat-select [(value)]="price">
+    <mat-select id="price" [(value)]="price">
       <mat-option value="16106">16106</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field>
     <mat-label>Color:</mat-label>
-    <mat-select [(value)]="color">
+    <mat-select id="color" [(value)]="color">
       <mat-option value="Gray">Gray</mat-option>
       <mat-option value="red">Red</mat-option>
       <mat-option value="white">White</mat-option>
     </mat-select>
   </mat-form-field>
   <div>
-    <mat-checkbox labelPosition="before" name="sunRoof" [(ngModel)]="sunRoof">Sun roof:</mat-checkbox>
+    <input type="checkbox" id="sunRoof" name="sunRoof" [(ngModel)]="sunRoof">Sun roof:<br>
   </div>
   <div>
     <mat-checkbox labelPosition="before" name="fourWheel" [(ngModel)]="fourWheel">Four wheel drive:</mat-checkbox>
